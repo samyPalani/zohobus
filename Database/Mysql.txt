@@ -1,0 +1,41 @@
+create database elab;
+
+
+use elab;
+
+create table user(id int(6) unsigned auto_increment primary key,
+name varchar(50),
+email varchar(50),
+dob varchar(50),
+pass varchar(50));
+  
+
+alter table user add role varchar(10);
+
+insert into user(name,email,dob,pass,role) values ('a', 'a@gmail.com','24-05-2001','admin','ADMIN');
+
+
+CREATE TABLE `elab`.`bus_details` (
+  `Bus_Id` INT NOT NULL,
+  `Bus_Type` VARCHAR(45) NULL,
+  `Departure_Time` VARCHAR(45) NULL,
+  `Boarding_Point` VARCHAR(45) NULL,
+  `Dropping_Point` VARCHAR(45) NULL,
+  `Duration` VARCHAR(45) NULL,
+  `Seats_Available` VARCHAR(45) NULL,
+  `Fare` VARCHAR(45) NULL,
+  `Arrival_Time` VARCHAR(45) NULL,
+  PRIMARY KEY (`Bus_Id`));
+
+
+
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('1', 'SL', '21:15', 'A', 'E', '09h:00m', '23', 'INR 1050', '06:15');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('2', 'SL', '21:15', 'A', 'B', '02h:15m', '32', 'INR 200', '00:30');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('3', 'SL', '01:00', 'B', 'C', '01h:10m', '43', 'INR 1000', '02:00');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('4', 'SL', '02:15', 'C', 'D', '02h:00m', '11', 'INR 200', '04:00');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('5', 'SL', '04:15', 'D', 'E', '02h:00m', '56', 'INR 200', '06:15');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('6', 'SR', '21:00', '1', '3', '09h:00m', '22', 'INR 1000', '06:15');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('7', 'SR', '21:00', '1', '2', '02h:00m', '12', 'INR 200', '23:00');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('8', 'SR', '23:00', '2', 'C', '02h:00m', '21', 'INR 200', '01:00');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('9', 'SR', '01:00', 'C', 'D', '02h:00m', '12', 'INR 250', '03:00');
+INSERT INTO `elab`.`bus_details` (`Bus_Id`, `Bus_Type`, `Departure_Time`, `Boarding_Point`, `Dropping_Point`, `Duration`, `Seats_Available`, `Fare`, `Arrival_Time`) VALUES ('10', 'SR', '03:00', 'D', '3', '02h:00m', '10', 'INR 200', '05:00');
